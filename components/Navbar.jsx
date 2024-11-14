@@ -5,9 +5,8 @@ import DesktopMenu from "./DesktopMenu";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#F7E6FF]">
-      <section className=" container mx-auto py-4 flex items-center justify-between">
-        {/* logo */}
+    <nav className="bg-[#F7E6FF] sticky top-0 shadow z-10">
+      <nav className=" container mx-auto py-4 flex items-center justify-between">
         <section className="flex items-center">
           <Image
             src="/logo.png"
@@ -29,7 +28,7 @@ const Navbar = () => {
         <button className="bg-gradient-to-r from-[#5936FF] to-[#BA2BFD] inline-flex items-center px-6 py-3 rounded-md font-semibold text-white">
           Contact Us <FiArrowUpRight className="text-xl ml-2" />
         </button>
-      </section>
+      </nav>
     </nav>
   );
 };

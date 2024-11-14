@@ -5,7 +5,7 @@ export const metadata = {
   title: "NextGrowth Digital",
   description:
     "Grow your business with data-driven advertising solution than deliver",
-  icons: "/logo.png",
+    icons: "/logo.png"
 };
 
 export default function RootLayout({ children }) {
@@ -13,8 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-         {children}
-        
+        {children}
       </body>
     </html>
   );
