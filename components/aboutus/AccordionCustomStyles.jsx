@@ -1,61 +1,103 @@
-"use client"
+"use client";
 import React from "react";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
- 
+
 export function AccordionCustomStyles() {
   const [open, setOpen] = React.useState(1);
- 
+
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
- 
+
   return (
     <>
-      <Accordion open={open === 1} className="mb-2 rounded-lg border border-blue-gray-100 px-4">
+      <Accordion
+        open={open === 1}
+        className={`mb-8 bg-[#FBF4FF] rounded-xl border border-[#EDCEFF] px-8 ${
+          open === 1 ? "bg-gradient-to-r from-[#5936FF] to-[#BA2BFD]" : ""
+        }`}
+      >
         <AccordionHeader
           onClick={() => handleOpen(1)}
           className={`border-b-0 transition-colors ${
-            open === 1 ? "text-blue-500 hover:!text-blue-700" : ""
+            open === 1 ? "text-white hover:text-white" : ""
           }`}
         >
           What is Material Tailwind?
         </AccordionHeader>
-        <AccordionBody className="pt-0 text-base font-normal">
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
+        <AccordionBody className="pt-0 text-white font-normal">
+          Founded on the belief that every brand has the potential to thrive
+          online, we combine creativity with advanced data analytics to unlock
+          growth opportunities for businesses of all sizes. Whether you’re
+          looking to boost your online visibility, drive qualified leads, or
+          optimize conversions, our team of certified professionals has the
+          skills and experience to elevate your brand.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} className="mb-2 rounded-lg border border-blue-gray-100 px-4">
+      <Accordion
+        open={open === 2}
+        className={`mb-8 bg-[#FBF4FF] rounded-xl border border-[#EDCEFF] px-8 ${
+          open === 2 ? "bg-gradient-to-r from-[#5936FF] to-[#BA2BFD]" : ""
+        }`}
+      >
         <AccordionHeader
           onClick={() => handleOpen(2)}
           className={`border-b-0 transition-colors ${
-            open === 2 ? "text-blue-500 hover:!text-blue-700" : ""
+            open === 2 ? "text-white hover:text-white" : ""
           }`}
         >
-          How to use Material Tailwind?
+          What is Material Tailwind?
         </AccordionHeader>
-        <AccordionBody className="pt-0 text-base font-normal">
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
+        <AccordionBody className="pt-0 text-white font-normal">
+          We&apos;re not always in the position that we want to be at.
+          We&apos;re constantly growing. We&apos;re constantly making mistakes.
+          We&apos;re constantly trying to express ourselves and actualize our
+          dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} className="rounded-lg border border-blue-gray-100 px-4">
+      <Accordion
+        open={open === 3}
+        className={`mb-8 bg-[#FBF4FF] rounded-xl border border-[#EDCEFF] px-8 ${
+          open === 3 ? "bg-gradient-to-r from-[#5936FF] to-[#BA2BFD]" : ""
+        }`}
+      >
         <AccordionHeader
           onClick={() => handleOpen(3)}
           className={`border-b-0 transition-colors ${
-            open === 3 ? "text-blue-500 hover:!text-blue-700" : ""
+            open === 3 ? "text-white hover:text-white" : ""
           }`}
         >
-          What can I do with Material Tailwind?
+          What is Material Tailwind?
         </AccordionHeader>
-        <AccordionBody className="pt-0 text-base font-normal">
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
+        <AccordionBody className="pt-0 text-white font-normal">
+          We&apos;re not always in the position that we want to be at.
+          We&apos;re constantly growing. We&apos;re constantly making mistakes.
+          We&apos;re constantly trying to express ourselves and actualize our
+          dreams.
+        </AccordionBody>
+      </Accordion>
+
+      <Accordion
+        open={open === 4}
+        className={`mb-8 bg-[#FBF4FF] rounded-xl border border-[#EDCEFF] px-8 ${
+          open === 4 ? "bg-gradient-to-r from-[#5936FF] to-[#BA2BFD]" : ""
+        }`}
+      >
+        <AccordionHeader
+          onClick={() => handleOpen(4)}
+          className={`border-b-0 transition-colors ${
+            open === 4 ? "text-white hover:text-white" : ""
+          }`}
+        >
+          What is Material Tailwind?
+        </AccordionHeader>
+        <AccordionBody className="pt-0 text-white font-normal">
+          We&apos;re not always in the position that we want to be at.
+          We&apos;re constantly growing. We&apos;re constantly making mistakes.
+          We&apos;re constantly trying to express ourselves and actualize our
+          dreams.
         </AccordionBody>
       </Accordion>
     </>
