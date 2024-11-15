@@ -1,12 +1,13 @@
 import Link from "next/link";
 import React from "react";
 import { FiArrowUpRight, FiArrowDownRight } from "react-icons/fi";
+import "./styles.css"
 
 const HeroText = () => {
   return (
     <section className="w-[58%] space-y-8">
       <h3 className="text-[#BA2CFD] border border-[#BA2CFD] font-semibold latter rounded-3xl py-3 px-6 inline-block -tracking-tighter uppercase bg-[#EDCEFF]">
-        Nexgrowth Digital international provides
+        Nextgrowth Digital international provides
       </h3>
       <h2 className="font-bold text-6xl capitalize leading-tight text-[#0E0925">
         Grow your{" "}
