@@ -5,6 +5,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import { FiArrowDownRight, FiArrowUpRight } from "react-icons/fi";
 
 export function AccordionCustomStyles() {
   const [open, setOpen] = React.useState(1);
@@ -25,7 +26,10 @@ export function AccordionCustomStyles() {
             open === 1 ? "text-white hover:text-white" : ""
           }`}
         >
-          What is Material Tailwind?
+          <div className="flex justify-between w-full items-center">
+            <h2>What is Material Tailwind?</h2>
+            {open === 1 ? <FiArrowUpRight /> : <FiArrowDownRight />}
+          </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-white font-normal">
           Founded on the belief that every brand has the potential to thrive
@@ -48,7 +52,10 @@ export function AccordionCustomStyles() {
             open === 2 ? "text-white hover:text-white" : ""
           }`}
         >
-          What is Material Tailwind?
+          <div className="flex justify-between w-full items-center">
+            <h2>What is Material Tailwind?</h2>
+            {open === 2 ? <FiArrowUpRight /> : <FiArrowDownRight />}
+          </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-white font-normal">
           We&apos;re not always in the position that we want to be at.
@@ -69,7 +76,10 @@ export function AccordionCustomStyles() {
             open === 3 ? "text-white hover:text-white" : ""
           }`}
         >
-          What is Material Tailwind?
+          <div className="flex justify-between w-full items-center">
+            <h2>What is Material Tailwind?</h2>
+            {open === 3 ? <FiArrowUpRight /> : <FiArrowDownRight />}
+          </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-white font-normal">
           We&apos;re not always in the position that we want to be at.
@@ -91,7 +101,10 @@ export function AccordionCustomStyles() {
             open === 4 ? "text-white hover:text-white" : ""
           }`}
         >
-          What is Material Tailwind?
+          <div className="flex justify-between w-full items-center">
+            <h2>What is Material Tailwind?</h2>
+            {open === 4 ? <FiArrowUpRight /> : <FiArrowDownRight />}
+          </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-white font-normal">
           We&apos;re not always in the position that we want to be at.
