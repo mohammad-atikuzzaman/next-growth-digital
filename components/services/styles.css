@@ -1,0 +1,57 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  height: auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 3px 1px #5836ff3f;
+  transition: all 0.5s;
+}
+
+.service-card:hover,
+.service-card:hover .service-detail {
+  background: linear-gradient(to right, #5936ff, #ba2bfd);
+  transform: scale(1.03);
+  color: white;
+}
+
+.service-card:hover .service-icon-arrow {
+  background: white;
+  color: #5936ff;
+  transform: rotate(-90deg);
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.service-icon {
+  background-color: #ecf4ff;
+  border-radius: 0.5rem;
+}
+
+.service-title {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.service-detail {
+  margin-top: 1.5rem;
+  color: #545454;
+}
+
+.service-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service-icon-arrow {
+  background: linear-gradient(to right, #5936ff, #ba2bfd);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: white;
+}
