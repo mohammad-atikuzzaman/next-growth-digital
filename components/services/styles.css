@@ -23,6 +23,10 @@
   transform: rotate(-90deg);
 }
 
+.service-card:hover .service-icon{
+    background: #FBF5FF;
+}
+
 .service-header {
   display: flex;
   align-items: center;
@@ -51,6 +55,7 @@
 
 .service-icon-arrow {
   background: linear-gradient(to right, #5936ff, #ba2bfd);
+  margin-top: 1rem;
   font-size: 1.5rem;
   border-radius: 50%;
   color: white;
