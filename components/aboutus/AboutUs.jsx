@@ -21,6 +21,7 @@ const AboutUs = () => {
         </p>
       </header>
       <main className="container mx-auto flex gap-8">
+        {/* about us acccourdian */}
         <section className="w-1/2">
           <AccordionCustomStyles />
         </section>
