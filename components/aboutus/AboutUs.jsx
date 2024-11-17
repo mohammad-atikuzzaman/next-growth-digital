@@ -27,7 +27,7 @@ const AboutUs = () => {
         </section>
         <section className="w-1/2">
           <Image src="/image/about.png" alt="" height={400} width={600} />
-          <button className="border border-[#5A36FF] text-[#5A36FF] text-lg font-medium px-8 py-3 rounded-lg inline-flex gap-2 items-center mt-8">
+          <button className="border border-[#5A36FF] text-[#5A36FF] text-lg font-medium px-8 py-3 rounded-lg inline-flex gap-2 items-center mt-8 hover:bg-gradient-to-r from-[#5936FF] to-[#BA2BFD] hover:text-white transition-all">
             Learn More <FiArrowDownRight className="text-xl" />
           </button>
         </section>
