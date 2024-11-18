@@ -38,7 +38,7 @@ const AboutCompanyText = () => {
             {/* Step Icon */}
             <div className="relative flex-shrink-0">
               <div className="w-8 h-8 flex items-center justify-center  bg-[#6749F5] text-white rounded-full">
-               <PiChecksBold/>
+               <PiChecksBold/> 
               </div>
             </div>
 

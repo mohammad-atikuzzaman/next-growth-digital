@@ -20,7 +20,7 @@ const AboutCompany = () => {
           before we
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-8 container mx-auto mt-20">
+      <div className="grid grid-cols-2 items-center gap-8 container mx-auto mt-20">
         <AboutCompanyImage />
         <AboutCompanyText />
       </div>
