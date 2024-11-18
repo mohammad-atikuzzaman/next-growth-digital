@@ -26,24 +26,24 @@ const AboutCompanyText = () => {
   ];
 
   return (
-    <div className="flex flex-col px-8 py-12 bg-gray-50">
+    <div className="flex flex-col px-8 py-12">
       <div className="relative pl-8">
         {/* Vertical Line */}
-        <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-400"></div>
+        <div className="absolute left-12 top-0 bottom-0 w-0.5 bg-[#6749F5] "></div>
 
         {/* Steps */}
         {steps.map((step, index) => (
           <div key={index} className="flex items-start mb-12">
             {/* Step Icon */}
             <div className="relative flex-shrink-0">
-              <div className="w-8 h-8 flex items-center justify-center bg-blue-400 text-white rounded-full">
+              <div className="w-8 h-8 flex items-center justify-center bg-[#6749F5] text-white rounded-full">
                 ✓✓
               </div>
             </div>
 
             {/* Step Content */}
-            <div className="ml-6">
-              <h3 className="text-lg font-bold text-gray-800">{step.title}</h3>
+            <div className="ml-6 text-left">
+              <h3 className="text-2xl font-semibold text-[#211650]">{step.title}</h3>
               <p className="text-gray-600 mt-2">{step.description}</p>
             </div>
           </div>
