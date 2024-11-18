@@ -1,5 +1,6 @@
 import React from "react";
 import AboutCompanyImage from "./AboutCompanyImage";
+import AboutCompanyText from "./AboutCompanyText";
 
 const AboutCompany = () => {
   return (
@@ -15,6 +16,7 @@ const AboutCompany = () => {
         <p className="text-lg font-medium text-[#676767] mt-6">We’re Companies and their products/services have to earn trust gradually — and they do it by answering the question we ask ourselves before we</p>
         <div>
             <AboutCompanyImage/>
+            <AboutCompanyText/>
         </div>
       </div>
     </section>
