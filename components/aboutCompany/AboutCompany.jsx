@@ -1,6 +1,7 @@
 import React from "react";
 import AboutCompanyImage from "./AboutCompanyImage";
 import AboutCompanyText from "./AboutCompanyText";
+import AboutCard from "./AboutCard";
 
 const AboutCompany = () => {
   return (
@@ -19,9 +20,15 @@ const AboutCompany = () => {
           before we
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-8 container mx-auto">
+      <div className="grid grid-cols-2 gap-8 container mx-auto mt-20">
         <AboutCompanyImage />
         <AboutCompanyText />
+      </div>
+      <div className="grid grid-cols-4 gap-6 container mx-auto mt-20">
+        <AboutCard/>
+        <AboutCard/>
+        <AboutCard/>
+        <AboutCard/>
       </div>
     </section>
   );

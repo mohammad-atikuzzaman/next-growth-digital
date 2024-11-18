@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+import { PiChecksBold } from "react-icons/pi";
 
 const AboutCompanyText = () => {
   const steps = [
@@ -36,8 +37,8 @@ const AboutCompanyText = () => {
           <div key={index} className="flex items-start mb-12">
             {/* Step Icon */}
             <div className="relative flex-shrink-0">
-              <div className="w-8 h-8 flex items-center justify-center bg-[#6749F5] text-white rounded-full">
-                ✓✓
+              <div className="w-8 h-8 flex items-center justify-center  bg-[#6749F5] text-white rounded-full">
+               <PiChecksBold/>
               </div>
             </div>
 
