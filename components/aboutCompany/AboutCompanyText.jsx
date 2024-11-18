@@ -1,19 +1,8 @@
-// import React from 'react';
-
-// const AboutCompanyText = () => {
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// };
-
-// export default AboutCompanyText;
-
+"use client"
 import React from "react";
 
 const AboutCompanyText = () => {
-  const features = [
+  const steps = [
     {
       title: "Data-Driven Approach",
       description:
@@ -22,7 +11,7 @@ const AboutCompanyText = () => {
     {
       title: "Custom Strategies Reality",
       description:
-        "Custom strategies can be used in a variety of contexts, including marketing, trading, UI/UX & product design and software development. You are easy all step good benefit.",
+        "Custom strategies can be used in a variety of contexts, including marketing, trading, UI/UX & product design, and software development. You are easily one step ahead.",
     },
     {
       title: "100% Proven Results",
@@ -37,27 +26,25 @@ const AboutCompanyText = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center px-6 py-10 bg-gray-100">
-      <div className="w-full max-w-3xl">
-        {features.map((feature, index) => (
-          <div key={index} className="flex items-start space-x-4 py-4">
-            {/* Line and Circle */}
-            <div className="flex flex-col items-center">
-              <div
-                className={`w-3 h-3 rounded-full ${
-                  index === 0 ? "bg-violet-600" : "bg-violet-300"
-                }`}
-              ></div>
-              {index !== features.length - 1 && (
-                <div className="w-1 h-full bg-violet-300"></div>
-              )}
+    <div className="flex flex-col px-8 py-12 bg-gray-50">
+      <div className="relative pl-8">
+        {/* Vertical Line */}
+        <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-400"></div>
+
+        {/* Steps */}
+        {steps.map((step, index) => (
+          <div key={index} className="flex items-start mb-12">
+            {/* Step Icon */}
+            <div className="relative flex-shrink-0">
+              <div className="w-8 h-8 flex items-center justify-center bg-blue-400 text-white rounded-full">
+                ✓✓
+              </div>
             </div>
-            {/* Content */}
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 mt-2">{feature.description}</p>
+
+            {/* Step Content */}
+            <div className="ml-6">
+              <h3 className="text-lg font-bold text-gray-800">{step.title}</h3>
+              <p className="text-gray-600 mt-2">{step.description}</p>
             </div>
           </div>
         ))}

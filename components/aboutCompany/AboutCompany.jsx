@@ -14,7 +14,7 @@ const AboutCompany = () => {
           your company
         </h2>
         <p className="text-lg font-medium text-[#676767] mt-6">We’re Companies and their products/services have to earn trust gradually — and they do it by answering the question we ask ourselves before we</p>
-        <div>
+        <div className="flex gap-8">
             <AboutCompanyImage/>
             <AboutCompanyText/>
         </div>
